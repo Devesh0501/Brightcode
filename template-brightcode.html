@@ -1,27 +1,21 @@
-<?php
-/**
- * Template Name: Brightcode Page
- *
- * @package WordPress
- * @subpackage WPX_Theme
- * @since 0.1.0
- * @version 1.0
- *
- */
-?>
-<?php get_header(); ?>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bright Code Report</title>
+  <link rel="stylesheet" href="brightcode.css">
+</head>
 
-<div class="redesign-20">
-  <div class="brightcode">
-    <section class="hero" aria-labelledby="hero-title">
+<div class="brightcode">
+  <section class="hero" aria-labelledby="hero-title">
+    <div class="container">
       <div class="top-block">
         <div class="brand-block">
-        <div class="brand">Bright Code</div>
-        <div class="sub">Free Website Health Check</div>
-      </div>
-      <div class="logo-block">
-        <img class="logo" alt="logo" src="/wp-content/themes/wpx/templates/dist/images/svgs/brightcode_logo.svg">
-      </div>
+          <h1>Bright Code</h1>
+          <p>Free Website Health Check</p>
+        </div>
+        <div class="logo-block">
+          <img class="logo" alt="logo" src="/images/brightcode_logo.svg">
+        </div>
       </div>
       <div class="hero-top">
         <div class="check-target">
@@ -35,101 +29,123 @@
         </div>
       </div>
 
-      <div class="cards" role="region" aria-label="top scores">
+      <div class="score-cards" role="region" aria-label="top scores">
         <div class="card">
           <h4>Performance (worst of mobile/desktop)</h4>
           <div class="score">41</div>
-          <div class="bar bar--p35" aria-hidden="true"><i></i></div>
+          <div class="bar bar--p35"><i></i></div>
         </div>
 
         <div class="card">
           <h4>Accessibility (worst)</h4>
           <div class="score">91</div>
-          <div class="bar bar--p92" aria-hidden="true"><i></i></div>
+          <div class="bar bar--p92"><i></i></div>
         </div>
 
         <div class="card">
           <h4>SEO (worst)</h4>
           <div class="score">77</div>
-          <div class="bar bar--p78" aria-hidden="true"><i></i></div>
+          <div class="bar bar--p78"><i></i></div>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <section class="guidelines" aria-labelledby="conversion-title">
-      <h4 id="conversion-title">Conversion Readiness (Lead Capture)</h4>
-      <div class="checks" role="list">
-        <div class="check" role="listitem"><span class="ok" aria-hidden="true"></span><span>Primary CTA present</span>
-        </div>
-        <div class="check" role="listitem"><span class="bad" aria-hidden="true"></span><span>CTA near top</span></div>
-        <div class="check" role="listitem"><span class="ok" aria-hidden="true"></span><span>Form</span></div>
-        <div class="check" role="listitem"><span class="bad" aria-hidden="true"></span><span>Tap-to-call</span></div>
-        <div class="check" role="listitem"><span class="bad" aria-hidden="true"></span><span>Tap-to-email</span></div>
-      </div>
-
-      <div class="muteline" aria-live="polite">
-        <ul>
-          <li>Primary CTA not detected near the top — consider placing it in the hero.</li>
-          <li>No tap-to-call link for mobile users.</li>
-          <li>No tap-to-email link for quick outreach.</li>
-        </ul>
-      </div>
-    </section>
-
-    <section class="section" aria-labelledby="marketing-title">
-      <h4 id="marketing-title">Marketing Readiness</h4>
-      <div class="marketing-grid" role="grid" aria-label="marketing readiness">
-        <div class="mk-card" role="gridcell"><span class="bad" aria-hidden="true"></span><strong>GA4</strong></div>
-        <div class="mk-card" role="gridcell"><span class="ok" aria-hidden="true"></span><strong>GTM</strong></div>
-        <div class="mk-card" role="gridcell"><span class="bad" aria-hidden="true"></span><strong>Meta Pixel</strong>
-        </div>
-        <div class="mk-card" role="gridcell"><span class="bad" aria-hidden="true"></span><strong>LinkedIn</strong></div>
-
-        <div class="mk-card" role="gridcell"><span class="ok" aria-hidden="true"></span><strong>OG Title</strong></div>
-        <div class="mk-card" role="gridcell"><span class="ok" aria-hidden="true"></span><strong>OG Description</strong>
-        </div>
-        <div class="mk-card" role="gridcell"><span class="ok" aria-hidden="true"></span><strong>OG Image</strong></div>
-        <div class="mk-card" role="gridcell"><span class="ok" aria-hidden="true"></span><strong>Twitter Card</strong>
+  <section class="report-block five-per-row">
+    <div class="container">
+      <div class="content-wrap">
+        <h4>Conversion Readiness (Lead Capture)</h4>
+        <div class="checks">
+          <div class="check"><span class="ok"></span><strong>Primary CTA present</strong>
+          </div>
+          <div class="check"><span class="bad"></span><strong>CTA near top</strong></div>
+          <div class="check"><span class="ok"></span><strong>Form</strong></div>
+          <div class="check"><span class="bad"></span><strong>Tap-to-call</strong></div>
+          <div class="check"><span class="bad"></span><strong>Tap-to-email</strong></div>
         </div>
 
-        <div class="mk-card" role="gridcell"><span class="ok" aria-hidden="true"></span><strong>robots.txt</strong>
+        <div class="muteline" aria-live="polite">
+          <ul>
+            <li>Primary CTA not detected near the top — consider placing it in the hero.</li>
+            <li>No tap-to-call link for mobile users.</li>
+            <li>No tap-to-email link for quick outreach.</li>
+          </ul>
         </div>
-        <div class="mk-card" role="gridcell"><span class="ok" aria-hidden="true"></span><strong>Disallow all</strong>
-        </div>
-        <div class="mk-card" role="gridcell"><span class="ok" aria-hidden="true"></span><strong>sitemap.xml</strong>
-        </div>
-        <div class="mk-card" role="gridcell"><span class="ok" aria-hidden="true"></span><strong>Canonical Tag</strong>
+        <div class="footnote">
+          <p>Heuristics based on homepage HTML. For precise above-the-fold checks, we can run a visual scan.</p>
         </div>
       </div>
+    </div>
+  </section>
 
-      <div class="muteline">og:title length could be improved</div>
-    </section>
+  <section class="report-block">
+    <div class="container">
+      <div class="content-wrap">
+        <h4>Marketing Readiness</h4>
+        <div class="checks" role="grid" aria-label="marketing readiness">
+          <div class="check ok"><span class="bad"></span><strong>GA4</strong></div>
+          <div class="check"><span class="ok"></span><strong>GTM</strong></div>
+          <div class="check"><span class="bad"></span><strong>Meta Pixel</strong>
+          </div>
+          <div class="check"><span class="bad"></span><strong>LinkedIn</strong></div>
+          <div class="check"><span class="bad"></span><strong>Hotjar</strong>
+          </div>
+          <div class="check"><span class="bad"></span><strong>Clarity</strong></div>
+          <div class="check"><span class="ok"></span><strong>OG Title</strong></div>
+          <div class="check"><span class="ok"></span><strong>OG Description</strong>
+          </div>
+          <div class="check"><span class="ok"></span><strong>OG Image</strong></div>
+          <div class="check"><span class="ok"></span><strong>Twitter Card</strong>
+          </div>
 
-    <section class="lighthouse-results">
+          <div class="check"><span class="ok"></span><strong>robots.txt</strong>
+          </div>
+          <div class="check"><span class="ok"></span><strong>Disallow all</strong>
+          </div>
+          <div class="check"><span class="ok"></span><strong>sitemap.xml</strong>
+          </div>
+          <div class="check"><span class="ok"></span><strong>Canonical Tag</strong>
+          </div>
+        </div>
+        <div class="muteline">og:title length could be improved</div>
+        <div class="footnote">
+          <p>Signals checked from homepage + robots/sitemap. Full crawl available on request.</p>
+        </div>
+      </div>
+  </section>
+
+  <section class="lighthouse-results">
+    <div class="container">
       <div class="two-col">
         <div class="lh-card">
-          <h4>Mobile (Lighthouse)</h4>
+          <h4 class="title">Mobile (Lighthouse)</h4>
           <div class="metric-row">
             <div class="metric">
-              <div class="num">41</div><small>Performance</small>
+              <div class="num">41</div>
+              <h4>Performance</h4>
             </div>
             <div class="metric">
-              <div class="num">91</div><small>Accessibility</small>
+              <div class="num">91</div>
+              <h4>Accessibility</h4>
             </div>
             <div class="metric">
-              <div class="num">77</div><small>SEO</small>
+              <div class="num">77</div>
+              <h4>SEO</h4>
             </div>
           </div>
 
           <div class="core">
             <div class="box"><strong>LCP</strong>
-              <div class="value">12.76s</div><small style="color:green">Good</small>
+              <div class="value">12.76s</div>
+              <h4 style="color:green">Good</h4>
             </div>
             <div class="box"><strong>TBT</strong>
-              <div class="value">0.53s</div><small style="color:green">Good</small>
+              <div class="value">0.53s</div>
+              <h4 style="color:green">Good</h4>
             </div>
             <div class="box"><strong>CLS</strong>
-              <div class="value">0.078</div><small style="color:green">Good</small>
+              <div class="value">0.078</div>
+              <h4 style="color:green">Good</h4>
             </div>
             <div class="box"><strong>FCP</strong>
               <div class="value">6.20s</div>
@@ -138,16 +154,19 @@
         </div>
 
         <div class="lh-card">
-          <h4>Desktop (Lighthouse)</h4>
+          <h4 class="title">Desktop (Lighthouse)</h4>
           <div class="metric-row">
             <div class="metric">
-              <div class="num">87</div><small>Performance</small>
+              <div class="num">87</div>
+              <h4>Performance</h4>
             </div>
             <div class="metric">
-              <div class="num">95</div><small>Accessibility</small>
+              <div class="num">95</div>
+              <h4>Accessibility</h4>
             </div>
             <div class="metric">
-              <div class="num">85</div><small>SEO</small>
+              <div class="num">85</div>
+              <h4>SEO</h4>
             </div>
           </div>
 
@@ -167,23 +186,32 @@
           </div>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <section class="lighthouse-results">
+  <section class="lighthouse-results">
+    <div class="container">
       <div class="two-col" style="margin-top:14px">
         <div class="lh-card">
-          <h4>Core Metrics (worst across devices)</h4>
+          <h4 class="title">Core Metrics (worst across devices)</h4>
           <div class="core">
-            <div class="box"><strong>LCP</strong>
-              <div class="value">12.76s</div><small style="color:green">Good</small>
+            <div class="box">
+              <h4>LCP</h4>
+              <div class="value">12.76s</div>
+              <h4 style="color:green">Good</h4>
             </div>
-            <div class="box"><strong>TBT</strong>
-              <div class="value">0.53s</div><small style="color:green">Good</small>
+            <div class="box">
+              <h4>TBT</h4>
+              <div class="value">0.53s</div>
+              <h4 style="color:green">Good</h4>
             </div>
-            <div class="box"><strong>CLS</strong>
-              <div class="value">0.078</div><small style="color:green">Good</small>
+            <div class="box">
+              <h4>CLS</h4>
+              <div class="value">0.078</div>
+              <h4 style="color:green">Good</h4>
             </div>
-            <div class="box"><strong>FCP</strong>
+            <div class="box">
+              <h4>FCP</h4>
               <div class="value">6.20s</div>
             </div>
           </div>
@@ -191,23 +219,23 @@
         </div>
 
         <div class="lh-card">
-          <h4>Top 3–5 Quick Wins</h4>
-          <ol>
+          <h4 class="title">Top 3–5 Quick Wins</h4>
+          <ul>
             <li><strong>Improve LCP</strong> — optimize hero image, responsive sizes, next-gen formats.</li>
             <li><strong>Reduce TBT</strong> — code-split, defer non-critical JS, remove unused scripts.</li>
             <li><strong>Tighten SEO basics</strong> — unique titles/meta, canonical, mobile checks.</li>
-          </ol>
+          </ul>
           <div class="muteline">We can fix the top issues in a 60–90 min Tune‑Up, or scope a full audit if needed.</div>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <aside>
-      <div class="summary-card">
-        <div class="muteline">Generated using Google Lighthouse (PageSpeed Insights).</div>
-        <div style="margin-top:10px;font-size:13px;color:#20383b">Questions? Reply to this email to book a free
-          technical audit.</div>
-      </div>
-    </aside>
-  </div>
-  <?php get_footer(); ?>
+  <aside>
+    <div class="summary-card">
+      <div class="muteline">Generated using Google Lighthouse (PageSpeed Insights).</div>
+      <div style="margin-top:10px;font-size:13px;color:#20383b">Questions? Reply to this email to book a free
+        technical audit.</div>
+    </div>
+  </aside>
+</div>

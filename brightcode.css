@@ -1,0 +1,481 @@
+/*
+/*
+ * Bright Code template (compiled CSS)
+ * Converted from SASS to plain CSS and enhanced with CSS custom properties for theming.
+ * Note: CSS custom properties cannot be used inside media query conditions, so
+ * breakpoints remain literal values in @media rules.
+ */
+
+:root {
+    --max-width: 2267px;
+    --gutter: 18px;
+    --radius: 12px;
+    --font-family: 'Inter', sans-serif;
+
+    --color-bg: #0f2a35;
+    --color-panel: #ffffff;
+    --color-gray: #959595;
+    --color-accent: #2FB47C;
+    --color-accent-2: #7ee6b1;
+    --color-danger: #ff5c5c;
+    --color-text: #0F1C2E;
+    --color-light: #f6f8fa;
+    --card-shadow: 0 6px 18px rgba(2, 10, 16, 0.06);
+    --card-shadow-heavy: 0 10px 30px rgba(2, 10, 16, 0.6);
+}
+
+body {
+    background: var(--color-light);
+    color: var(--color-text);
+    font-family: var(--font-family);
+    margin: 0;
+    padding: 0;
+    line-height: 1.5;
+    font-size: 16px;
+}
+/* layout container */
+.container {
+    max-width: var(--max-width);
+    margin: 36px auto;
+    padding: 0 20px;
+}
+
+.brightcode {
+    font-family: var(--font-family);
+}
+
+/* header */
+.brightcode .hero {
+    background: #0F1C2E;
+    padding: 30px;
+    border-radius: 0 0 99px 99px;
+    color: #ffffff;
+}
+
+.brightcode .hero .top-block {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: var(--gutter);
+    color: var(--color-light);
+    margin-bottom: 18px;
+}
+
+.brightcode .hero .top-block .brand-block h1 {
+    font-weight: 800;
+    font-size: 100px;
+}
+
+.brightcode .hero .top-block .brand-block p {
+    font-size: 35px;
+    font-weight: 700;
+    margin-top: 6px;
+    color: var(--color-gray);
+}
+
+.brightcode .hero .top-block .logo-block .logo {
+    display: block;
+    width: 346px;
+    height: auto;
+    opacity: .9;
+}
+
+.brightcode .hero .hero-top {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+
+.brightcode .hero .hero-top .check-target,
+.brightcode .hero .hero-top .report-date {
+    display: flex;
+    align-items: center;
+    padding: 15px 15px 15px 30px;
+    border: 2px solid var(--color-panel);
+    border-radius: 99px;
+}
+
+.brightcode .hero .hero-top .check-target .label,
+.brightcode .hero .hero-top .report-date .label {
+    color: var(--color-panel);
+    font-size: 35px;
+    margin-bottom: 6px;
+}
+
+.brightcode .hero .hero-top .pill {
+    background: var(--color-accent);
+    padding: 10px 14px;
+    border-radius: 999px;
+    font-size: 35px;
+    display: inline-flex;
+    align-items: center;
+    margin-left: 20px;
+}
+
+.brightcode .hero .hero-top .pill strong {
+    padding: 6px 12px;
+    border-radius: 8px;
+    color: var(--color-panel);
+    font-weight: 700;
+}
+
+/* top score score-cards */
+.brightcode .hero .score-cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--gutter);
+    margin-top: 100px
+}
+
+.brightcode .hero .score-cards .card {
+    background: var(--color-panel);
+    color: var(--color-text);
+    border-radius: 35px;
+    padding: 50px 40px;
+    box-shadow: 0 6px 20px rgba(2, 10, 16, 0.15);
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.brightcode .hero .score-cards .card h4 {
+    margin: 0;
+    font-size: 35px;
+    color: var(--color-text);
+    font-weight: 600;
+}
+
+.brightcode .hero .score-cards .card .score {
+    font-size: 400px;
+    font-weight: 800;
+    line-height: 0.85;
+    color: var(--color-text);
+}
+
+.brightcode .hero .score-cards .card .bar {
+    height: 27px;
+    background: #EDEDED;
+    border-radius: 999px;
+    overflow: hidden;
+}
+
+.brightcode .hero .score-cards .card .bar i {
+    display: block;
+    height: 100%;
+    background: var(--color-accent);
+}
+
+.brightcode .hero .score-cards .card.bar--p35 .bar i,
+.brightcode .hero .score-cards .card .bar.bar--p35 i {
+    width: 35%;
+}
+
+.brightcode .hero .score-cards .card.bar--p92 .bar i,
+.brightcode .hero .score-cards .card .bar.bar--p92 i {
+    width: 92%;
+}
+
+.brightcode .hero .score-cards .card.bar--p78 .bar i,
+.brightcode .hero .score-cards .card .bar.bar--p78 i {
+    width: 78%;
+}
+
+/* section inside hero */
+.brightcode .hero .report-block {
+    margin-top: 18px;
+}
+
+/* Conversion readiness / report-block */
+.brightcode .report-block {
+    margin-top: 18px;
+    background: var(--color-panel);
+
+}
+
+.brightcode .report-block.five-per-row .checks {
+    grid-template-columns: repeat(5, 1fr);
+
+}
+
+.brightcode .report-block .content-wrap {
+    padding: 30px 0 30px 0;
+    border: 1px solid #d0d0d0;
+    border-radius: var(--radius);
+}
+
+.brightcode .report-block h4 {
+    margin: 0 0 12px 0;
+    font-size: 35px;
+    font-weight: 700;
+    margin-left: 35px;
+    color: var(--color-text);
+}
+
+.brightcode .check:last-child {
+    border-right: none;
+}
+
+.brightcode .check .ok,
+.brightcode .check .bad {
+    position: relative;
+    width: 100px;
+    height: 100px;
+}
+
+.brightcode .check .ok::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100px;
+    height: 100px;
+    background: url(/images/ok.svg) no-repeat;
+    display: inline-block;
+}
+
+.brightcode .check .bad::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100px;
+    height: 100px;
+    background: url(/images/wrong.svg) no-repeat;
+    display: inline-block;
+}
+
+.brightcode .muteline {
+    color: var(--color-gray);
+    font-size: 25px;
+    font-weight: 500;
+    margin-top: 8px;
+}
+
+.brightcode .muteline ul {
+    margin: 8px 0 0 18px;
+    padding: 0;
+}
+
+.brightcode .muteline ul li {
+    color: var(--color-text);
+    font-weight: 700;
+}
+
+/* Marketing readiness grid */
+.brightcode .checks {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    border-top: 1px solid #d0d0d0;
+}
+
+.check:nth-child(7) {
+    grid-column: 1 / span 1;
+}
+
+.check:nth-child(7),
+.check:nth-child(8),
+.check:nth-child(9),
+.check:nth-child(10) {
+    grid-column: span calc(6 / 4);
+}
+
+/* 3rd row = 4 items */
+.check:nth-child(11) {
+    grid-column: 1 / span 1;
+}
+
+.check:nth-child(11),
+.check:nth-child(12),
+.check:nth-child(13),
+.check:nth-child(14) {
+    grid-column: span calc(6 / 4);
+}
+
+.brightcode .checks .check {
+    padding: 12px;
+    background: var(--color-panel);
+    display: flex;
+    align-items: center;
+    border-right: 1px solid #d0d0d0;
+    border-bottom: 1px solid #d0d0d0;
+    gap: 8px;
+}
+
+.brightcode .checks .check strong {
+    font-size: 35px;
+    color: var(--color-gray);
+    font-weight: 700;
+    margin-left: 35px;
+}
+
+/* Lighthouse / metrics area */
+.brightcode .lighthouse-results {
+    margin-top: 18px;
+}
+
+.brightcode .lighthouse-results .two-col {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--gutter);
+}
+
+.brightcode .lighthouse-results .two-col .lh-card {
+    background: var(--color-panel);
+    border-radius: var(--radius);
+    border: 1px solid #d0d0d0;
+    border-radius: var(--radius);
+}
+
+.brightcode .lighthouse-results .two-col .lh-card h4 {
+    padding: 0 0 8px 35px;
+    font-size: 35px;
+    font-weight: 700;
+}
+
+.brightcode .lighthouse-results .two-col .lh-card h4.title{
+    border-bottom: 1px solid #d0d0d0;
+}
+
+.brightcode .lighthouse-results .metric-row {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+}
+
+.brightcode .lighthouse-results .metric {
+    flex: 1;
+    min-width: 80px;
+    background: #fbfeff;
+    border-radius: 10px;
+    padding: 12px;
+}
+
+.brightcode .lighthouse-results .metric .num {
+    font-size: 155px;
+    font-weight: 700;
+    color: var(--color-text);
+    display: block;
+}
+
+.brightcode .lighthouse-results .metric small {
+    display: block;
+    color: var(--color-gray);
+    font-size: 35px;
+    margin-top: 6px;
+}
+
+.brightcode .lighthouse-results .core {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+    margin-top: 18px;
+}
+
+.brightcode .lighthouse-results .core .box {
+    background: var(--color-panel);
+    border-radius: 10px;
+    padding: 14px;
+    flex: 1;
+    min-width: 140px;
+}
+
+.brightcode .lighthouse-results .core .box strong {
+    display: block;
+    font-size: 35px;
+    font-weight: 700;
+}
+
+.brightcode .lighthouse-results .core .box .value {
+    font-size: 60px;
+    margin-top: 8px;
+    font-family: IBM Plex Mono;
+}
+
+.brightcode .lighthouse-results .core .box small {
+    display: block;
+    margin-top: 6px;
+    color: green;
+}
+
+.brightcode .lighthouse-results ul li{
+    margin-bottom: 6px;
+    font-size: 35px;
+}
+
+/* summary / quick wins */
+.brightcode .summary-card {
+    background: var(--color-panel);
+    border-radius: 12px;
+    padding: 16px;
+    box-shadow: var(--card-shadow);
+}
+
+.brightcode .summary-card .muteline {
+    color: var(--color-gray);
+}
+
+/* quick wins card */
+.brightcode .quick {
+    background: var(--color-panel);
+    border-radius: 10px;
+    padding: 14px;
+    box-shadow: 0 4px 10px rgba(2, 10, 16, 0.03);
+}
+
+.brightcode .quick ol {
+    margin: 8px 0 0 18px;
+    color: #20383b;
+}
+
+.brightcode .good {
+    color: green !important;
+}
+
+/* use class rather than inline style */
+.brightcode .bad-dot {
+    background: var(--color-danger);
+    border-radius: 50%;
+    width: 10px;
+    height: 10px;
+    display: inline-block;
+}
+
+/* footer */
+.brightcode footer {
+    font-size: 12px;
+    color: var(--color-gray);
+    margin-top: 18px;
+    text-align: center;
+}
+
+/* responsive */
+@media (max-width: 980px) {
+    .brightcode .hero .score-cards {
+        grid-template-columns: 1fr;
+    }
+
+    .brightcode .checks {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .brightcode .lighthouse-results .two-col {
+        grid-template-columns: 1fr;
+    }
+
+    .brightcode .wrap {
+        padding: 18px;
+    }
+}
+
+@media (max-width: 560px) {
+    .brightcode .checks {
+        grid-template-columns: 1fr;
+    }
+
+    .brightcode header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 12px;
+    }
+}
