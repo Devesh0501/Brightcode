@@ -4,7 +4,8 @@
   <title>Bright Code Report</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600;700&display=swap"
+    rel="stylesheet">
   <link rel="stylesheet" href="brightcode.css">
 </head>
 
@@ -23,32 +24,43 @@
       <div class="hero-top">
         <div class="check-target">
           <div class="label">Check for:</div>
-          <div class="pill"><h4>www.surescripts.com</h4></div>
+          <div class="pill">
+            <h4>www.surescripts.com</h4>
+          </div>
         </div>
 
         <div class="report-date">
           <div class="label">Report:</div>
-          <div class="pill"><h4>2025/10/02</h4></div>
+          <div class="pill">
+            <h4>2025/10/02</h4>
+          </div>
         </div>
       </div>
 
       <div class="score-cards" role="region" aria-label="top scores">
         <div class="card">
           <h4>Performance (worst of mobile/desktop)</h4>
-          <div class="score">41</div>
-          <div class="bar bar--p35"><i></i></div>
+          <div class="wrap">
+            <div class="score">41</div>
+            <div class="bar bar--p35"><i></i></div>
+          </div>
+
         </div>
 
         <div class="card">
           <h4>Accessibility (worst)</h4>
-          <div class="score">91</div>
-          <div class="bar bar--p92"><i></i></div>
+          <div class="wrap">
+            <div class="score">91</div>
+            <div class="bar bar--p92"><i></i></div>
+          </div>
         </div>
 
         <div class="card">
           <h4>SEO (worst)</h4>
-          <div class="score">77</div>
-          <div class="bar bar--p78"><i></i></div>
+          <div class="wrap">
+            <div class="score">77</div>
+            <div class="bar bar--p78"><i></i></div>
+          </div>
         </div>
       </div>
     </div>
@@ -59,19 +71,29 @@
       <div class="content-wrap">
         <h4 class="title">Conversion Readiness (Lead Capture)</h4>
         <div class="checks">
-          <div class="check"><span class="ok"></span><h4>Primary CTA present</h4>
+          <div class="check"><span class="ok"></span>
+            <h4>Primary CTA present</h4>
           </div>
-          <div class="check"><span class="bad"></span><h4>CTA near top</h4></div>
-          <div class="check"><span class="ok"></span><h4>Homepage Form</h4></div>
-          <div class="check"><span class="bad"></span><h4>Tap-to-call</h4></div>
-          <div class="check"><span class="bad"></span><h4>Tap-to-email</h4></div>
+          <div class="check"><span class="bad"></span>
+            <h4>CTA near top</h4>
+          </div>
+          <div class="check"><span class="ok"></span>
+            <h4>Homepage Form</h4>
+          </div>
+          <div class="check"><span class="bad"></span>
+            <h4>Tap-to-call</h4>
+          </div>
+          <div class="check"><span class="bad"></span>
+            <h4>Tap-to-email</h4>
+          </div>
         </div>
-          <ul>
-            <li>Primary CTA not detected near the top — consider placing it in the hero.</li>
-            <li>No tap-to-call link for mobile users.</li>
-            <li>No tap-to-email link for quick outreach.</li>
-          </ul>
-          <span class="muteline">Heuristics based on homepage HTML. For precise above-the-fold checks, we can run a visual scan.</span>
+        <ul>
+          <li>Primary CTA not detected near the top — consider placing it in the hero.</li>
+          <li>No tap-to-call link for mobile users.</li>
+          <li>No tap-to-email link for quick outreach.</li>
+        </ul>
+        <span class="muteline">Heuristics based on homepage HTML. For precise above-the-fold checks, we can run a visual
+          scan.</span>
       </div>
     </div>
   </section>
@@ -81,28 +103,48 @@
       <div class="content-wrap">
         <h4 class="title">Marketing Readiness</h4>
         <div class="checks" role="grid" aria-label="marketing readiness">
-          <div class="check ok"><span class="bad"></span><h4>GA4</h4></div>
-          <div class="check"><span class="ok"></span><h4>GTM</h4></div>
-          <div class="check"><span class="bad"></span><h4>Meta Pixel</h4>
+          <div class="check ok"><span class="bad"></span>
+            <h4>GA4</h4>
           </div>
-          <div class="check"><span class="bad"></span><h4>LinkedIn</h4></div>
-          <div class="check"><span class="bad"></span><h4>Hotjar</h4>
+          <div class="check"><span class="ok"></span>
+            <h4>GTM</h4>
           </div>
-          <div class="check"><span class="bad"></span><h4>Clarity</h4></div>
-          <div class="check"><span class="ok"></span><h4>OG Title</h4></div>
-          <div class="check"><span class="ok"></span><h4>OG Description</h4>
+          <div class="check"><span class="bad"></span>
+            <h4>Meta Pixel</h4>
           </div>
-          <div class="check"><span class="ok"></span><h4>OG Image</h4></div>
-          <div class="check"><span class="ok"></span><h4>Twitter Card</h4>
+          <div class="check"><span class="bad"></span>
+            <h4>LinkedIn</h4>
+          </div>
+          <div class="check"><span class="bad"></span>
+            <h4>Hotjar</h4>
+          </div>
+          <div class="check"><span class="bad"></span>
+            <h4>Clarity</h4>
+          </div>
+          <div class="check"><span class="ok"></span>
+            <h4>OG Title</h4>
+          </div>
+          <div class="check"><span class="ok"></span>
+            <h4>OG Description</h4>
+          </div>
+          <div class="check"><span class="ok"></span>
+            <h4>OG Image</h4>
+          </div>
+          <div class="check"><span class="ok"></span>
+            <h4>Twitter Card</h4>
           </div>
 
-          <div class="check"><span class="ok"></span><h4>robots.txt</h4>
+          <div class="check"><span class="ok"></span>
+            <h4>robots.txt</h4>
           </div>
-          <div class="check"><span class="ok"></span><h4>Disallow all</h4>
+          <div class="check"><span class="ok"></span>
+            <h4>Disallow all</h4>
           </div>
-          <div class="check"><span class="ok"></span><h4>sitemap.xml</h4>
+          <div class="check"><span class="ok"></span>
+            <h4>sitemap.xml</h4>
           </div>
-          <div class="check"><span class="ok"></span><h4>Canonical Tag</h4>
+          <div class="check"><span class="ok"></span>
+            <h4>Canonical Tag</h4>
           </div>
         </div>
         <ul>
@@ -127,28 +169,32 @@
             <div class="metric">
               <h4>Accessibility</h4>
               <span class="num">91</span>
-                            <div class="bar bar--p91"><i></i></div>
+              <div class="bar bar--p91"><i></i></div>
 
             </div>
             <div class="metric">
               <h4>SEO</h4>
-              <span class="num">77</span> 
-                            <div class="bar bar--p77"><i></i></div>
-        
+              <span class="num">77</span>
+              <div class="bar bar--p77"><i></i></div>
+
             </div>
           </div>
 
           <div class="core">
-            <div class="box"><h4>LCP</h4>
+            <div class="box">
+              <h4>LCP</h4>
               <span class="value">12.76s</span>
             </div>
-            <div class="box"><h4>TBT</h4>
+            <div class="box">
+              <h4>TBT</h4>
               <span class="value">0.53s</span>
             </div>
-            <div class="box"><h4>CLS</h4>
+            <div class="box">
+              <h4>CLS</h4>
               <span class="value">0.078</span>
             </div>
-            <div class="box"><h4>FCP</h4>
+            <div class="box">
+              <h4>FCP</h4>
               <span class="value">6.20s</span>
             </div>
           </div>
@@ -175,16 +221,20 @@
           </div>
 
           <div class="core">
-            <div class="box"><h4>LCP</h4>
+            <div class="box">
+              <h4>LCP</h4>
               <span class="value">1.34s</span>
             </div>
-            <div class="box"><h4>TBT</h4>
+            <div class="box">
+              <h4>TBT</h4>
               <span class="value">0.12s</span>
             </div>
-            <div class="box"><h4>CLS</h4>
+            <div class="box">
+              <h4>CLS</h4>
               <span class="value">0.047</span>
             </div>
-            <div class="box"><h4>FCP</h4>
+            <div class="box">
+              <h4>FCP</h4>
               <span class="value">0.88s</span>
             </div>
           </div>
@@ -225,24 +275,31 @@
         <div class="lh-card">
           <h4 class="title">Top 3–5 Quick Wins</h4>
           <ul>
-            <li><h4>Improve LCP</h4> — optimize hero image, responsive sizes, next-gen formats.</li>
-            <li><h4>Reduce TBT</h4> — code-split, defer non-critical JS, remove unused scripts.</li>
-            <li><h4>Tighten SEO basics</h4> — unique titles/meta, canonical, mobile checks.</li>
+            <li>
+              <h4><strong>Improve **LCP**</strong> (optimize hero image, responsive sizes, next-gen formats).
+            </li>
+            <li>
+              <h4><strong>Reduce **TBT**</strong> (code-split, defer non-critical JS, remove unused scripts).</h4>
+            </li>
+            <li>
+              <h4><strong>Tighten **SEO basics**</strong> (unique titles/meta, canonical, mobile checks).</h4>
+            </li>
           </ul>
-          <span class="muteline">We can fix the top issues in a 60–90 min Tune‑Up, or scope a full audit if needed.</span>
+          <span class="muteline">We can fix the top issues in a 60–90 min Tune‑Up, or scope a full audit if
+            needed.</span>
         </div>
       </div>
     </div>
   </section>
 
-    <section class="summary-card pb-large">
-      <div class="container">
-<div class="text-wrap">
-      <p>Generated using Google Lighthouse (PageSpeed Insights).</p>
-      <p>Questions? Reply to this email to book a free
-        technical audit.</p>
+  <section class="summary-card pb-large">
+    <div class="container">
+      <div class="text-wrap">
+        <p>Generated using Google Lighthouse (PageSpeed Insights).</p>
+        <p>Questions? Reply to this email to book a free
+          technical audit.</p>
       </div>
-      </div>
-      
-    </section>
+    </div>
+
+  </section>
 </div>

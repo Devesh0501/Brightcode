@@ -171,6 +171,7 @@ li {
     box-shadow: 0 6px 20px rgba(2, 10, 16, 0.15);
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
     gap: 10px;
 }
 
@@ -227,12 +228,8 @@ li {
     margin-top: -118px;
 }
 
-.brightcode .report-block.five-per-row .checks {
-    grid-template-columns: repeat(5, 1fr);
-}
-
 .brightcode .report-block .content-wrap {
-    padding: 30px 0 35px 0;
+    padding: 30px 0 0;
     border: 1px solid #d0d0d0;
     border-radius: var(--radius);
     background-color: #fff;
@@ -325,37 +322,62 @@ li {
 }
 
 /* Marketing readiness grid */
-.brightcode .checks {
+.brightcode .report-block .checks {
     display: grid;
-    grid-template-columns: repeat(6, 1fr);
+    grid-template-columns: repeat(12, 1fr);
     border-top: 1px solid #d0d0d0;
 }
 
-.check:nth-child(7) {
-    grid-column: 1 / span 1;
+.brightcode .report-block.five-per-row .content-wrap .checks {
+    grid-template-columns: repeat(5, 1fr);
 }
 
-.check:nth-child(7),
-.check:nth-child(8),
-.check:nth-child(9),
-.check:nth-child(10) {
-    grid-column: span calc(6 / 4);
+.brightcode .report-block.five-per-row .content-wrap .checks .check {
+
+    grid-column: unset;
 }
 
-/* 3rd row = 4 items */
-.check:nth-child(11) {
-    grid-column: 1 / span 1;
+/* First row: 6 items, each spanning 2 columns */
+.brightcode .checks .check:nth-child(-n+6) {
+    grid-column: span 2;
 }
 
-.check:nth-child(11),
-.check:nth-child(12),
-.check:nth-child(13),
-.check:nth-child(14) {
-    grid-column: span calc(6 / 4);
+/* Second row: 4 items, each spanning 3 columns */
+.brightcode .checks .check:nth-child(7) {
+    grid-column: 1 / span 3;
+}
+
+.brightcode .checks .check:nth-child(8) {
+    grid-column: 4 / span 3;
+}
+
+.brightcode .checks .check:nth-child(9) {
+    grid-column: 7 / span 3;
+}
+
+.brightcode .checks .check:nth-child(10) {
+    grid-column: 10 / span 3;
+}
+
+/* Third row: 4 items, each spanning 3 columns */
+.brightcode .checks .check:nth-child(11) {
+    grid-column: 1 / span 3;
+}
+
+.brightcode .checks .check:nth-child(12) {
+    grid-column: 4 / span 3;
+}
+
+.brightcode .checks .check:nth-child(13) {
+    grid-column: 7 / span 3;
+}
+
+.brightcode .checks .check:nth-child(14) {
+    grid-column: 10 / span 3;
 }
 
 .brightcode .checks .check {
-    padding: 38px 40px;
+    padding: 38px 20px 38px 40px;
     background: var(--color-panel);
     display: flex;
     align-items: center;
@@ -368,7 +390,7 @@ li {
     font-size: 35px;
     color: var(--color-gray);
     font-weight: 700;
-    margin-left: 35px;
+    margin-left: 20px;
 }
 
 /* Lighthouse / metrics area */
@@ -393,6 +415,12 @@ li {
     font-size: 35px;
     font-weight: 700;
     color: var(--color-gray);
+}
+
+.brightcode .lighthouse-results .two-col .lh-card li h4 {
+    font-size: 35px;
+    font-weight: 400;
+    color: #000;
 }
 
 .brightcode .lighthouse-results .two-col .lh-card h4.good {
