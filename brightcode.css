@@ -409,6 +409,7 @@ li {
     border: 1px solid #d0d0d0;
     border-radius: var(--radius);
     overflow: hidden;
+    height: max-content;
 }
 
 .brightcode .lighthouse-results .two-col .lh-card h4 {
