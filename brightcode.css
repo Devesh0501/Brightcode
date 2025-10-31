@@ -421,7 +421,7 @@ li {
 .brightcode .lighthouse-results .two-col .lh-card li h4 {
     font-size: 35px;
     font-weight: 400;
-    color: #000;
+    color: var(--color-text);
 }
 
 .brightcode .lighthouse-results .two-col .lh-card h4.good {
@@ -432,7 +432,7 @@ li {
     padding: 40px;
     font-size: 35px;
     font-weight: 700;
-    color: #000;
+    color: var(--color-text);
     border-bottom: 1px solid #d0d0d0;
 }
 
@@ -558,36 +558,7 @@ li {
 .brightcode .summary-card p {
     font-size: 25px;
     font-weight: 500;
-}
-
-/* quick wins card */
-.brightcode .quick {
-    background: var(--color-panel);
-    border-radius: 10px;
-    padding: 14px;
-    box-shadow: 0 4px 10px rgba(2, 10, 16, 0.03);
-}
-
-.brightcode .quick ul {
-    margin: 8px 0 0 18px;
-    color: #20383b;
-}
-
-/* use class rather than inline style */
-.brightcode .bad-dot {
-    background: var(--color-danger);
-    border-radius: 50%;
-    width: 10px;
-    height: 10px;
-    display: inline-block;
-}
-
-/* footer */
-.brightcode footer {
-    font-size: 12px;
-    color: var(--color-gray);
-    margin-top: 18px;
-    text-align: center;
+    color: #000;
 }
 
 /* responsive */
