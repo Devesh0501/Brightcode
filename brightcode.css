@@ -261,7 +261,7 @@ li {
     left: 0;
     width: 100px;
     height: 100px;
-    background: url(/images/ok.svg) no-repeat;
+    background: url(images/ok.svg) no-repeat;
     display: inline-block;
 }
 
@@ -272,7 +272,7 @@ li {
     left: 0;
     width: 100px;
     height: 100px;
-    background: url(/images/wrong.svg) no-repeat;
+    background: url(images/wrong.svg) no-repeat;
     display: inline-block;
 }
 
@@ -293,7 +293,7 @@ li {
     top: 40px;
     width: 33px;
     height: 33px;
-    background: url(/images/information-button.svg) no-repeat;
+    background: url(images/information-button.svg) no-repeat;
 }
 
 .brightcode ul {
@@ -318,7 +318,7 @@ li {
     top: 10px;
     width: 33px;
     height: 33px;
-    background: url(/images/tick.svg) no-repeat;
+    background: url(images/tick.svg) no-repeat;
 }
 
 /* Marketing readiness grid */
