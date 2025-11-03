@@ -1,11 +1,3 @@
-/*
-/*
- * Bright Code template (compiled CSS)
- * Converted from SASS to plain CSS and enhanced with CSS custom properties for theming.
- * Note: CSS custom properties cannot be used inside media query conditions, so
- * breakpoints remain literal values in @media rules.
- */
-
 /* Reset default styles */
 * {
     margin: 0;
@@ -35,11 +27,11 @@ body {
     font-family: var(--font-family);
     margin: 0;
     padding: 0;
-    line-height: 1.5;
+    line-height: normal;
 }
 
 section {
-    padding: 60px 0;
+    padding: 55px 0;
 }
 
 .pt-none {
@@ -253,6 +245,7 @@ li {
     position: relative;
     width: 100px;
     height: 100px;
+    min-width: 100px;
 }
 
 .brightcode .check .ok::before {
@@ -282,7 +275,7 @@ li {
     color: var(--color-gray);
     font-size: 25px;
     font-weight: 500;
-    padding: 40px 0 40px 90px;
+    padding: 35px 0 30px 90px;
     border-top: 1px solid #d0d0d0;
     position: relative;
 }
@@ -291,15 +284,14 @@ li {
     content: "";
     position: absolute;
     left: 40px;
-    top: 40px;
+    top: 37x;
     width: 33px;
     height: 33px;
     background: url(images/information-button.svg) no-repeat;
 }
 
 .brightcode ul {
-    padding: 50px 0 0 40px;
-    /* border-bottom: 1px solid #d0d0d0; */
+    padding: 50px 0 24px 40px;
 }
 
 
@@ -307,7 +299,7 @@ li {
     color: var(--color-text);
     font-size: 35px;
     font-weight: 700;
-    padding-bottom: 40px;
+    padding-bottom: 20px;
     position: relative;
     padding-left: 50px;
 }
@@ -378,7 +370,7 @@ li {
 }
 
 .brightcode .checks .check {
-    padding: 38px 20px 38px 40px;
+    padding: 34px 20px 34px 40px;
     background: var(--color-panel);
     display: flex;
     align-items: center;
@@ -392,12 +384,10 @@ li {
     color: var(--color-gray);
     font-weight: 700;
     margin-left: 20px;
+    line-height: normal;
 }
 
 /* Lighthouse / metrics area */
-.brightcode .lighthouse-results {
-    margin-top: 18px;
-}
 
 .brightcode .lighthouse-results .two-col {
     display: grid;
@@ -430,9 +420,10 @@ li {
 }
 
 .brightcode .lighthouse-results .two-col .lh-card h4.title {
-    padding: 40px;
+    padding: 30px 40px;
     font-size: 35px;
     font-weight: 700;
+    line-height: normal;
     color: var(--color-text);
     border-bottom: 1px solid #d0d0d0;
 }
@@ -447,12 +438,13 @@ li {
 
 .brightcode .lighthouse-results .metric {
     flex: 1;
-    padding: 40px;
+    padding: 40px 40px 50px 40px;
 }
 
 .brightcode .lighthouse-results .metric .num {
     font-size: 155px;
     font-weight: 700;
+    line-height: normal;
     color: var(--color-text);
     display: block;
     font-family: var(--font-family-1);
@@ -515,7 +507,7 @@ li {
 }
 
 .brightcode .lighthouse-results .core .box {
-    padding: 40px;
+    padding: 30px 40px;
     flex: 1;
     min-width: 140px;
     border-right: 1px solid #d0d0d0;
@@ -543,6 +535,10 @@ li {
     display: block;
     margin-top: 6px;
     color: green;
+}
+
+.brightcode .lighthouse-results ul {
+    padding: 35px 0 12px 40px;
 }
 
 .brightcode .lighthouse-results ul li {
